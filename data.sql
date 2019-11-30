@@ -414,11 +414,11 @@
 
 
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
-VALUES ("Alliance", 1);
+-- INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
+-- VALUES ("Alliance", 1);
 
 INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
-VALUES ("Royal Never Give ", 1);
+VALUES ("Royal Never Give Up", 1);
 
 INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Fnatic", 2);
