@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Cop4710FinalProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cop4710ProjectBackend',
+        'NAME': 'COP4710Backend',
         'USER': 'root',
         'PASSWORD': 'Tarandderan102938#',
         'HOST': 'localhost',

@@ -37,6 +37,7 @@ class Tournaments(models.Model):
 class Match(models.Model):
     Round = models.CharField(max_length = 100)
     Year = models.DateField()
+    Winner = models.ForeignKey(Team, on_delete=models.CASCADE)
 
 class PlaysIn(models.Model):
     TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)
