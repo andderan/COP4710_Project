@@ -10,10 +10,10 @@ class VideoGames(models.model):
 class Players(models.model):
     TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)
     Sponsor = models.CharField(max_length = 100)
-    PlayerName = models.CharField(max_length = 100)
-    Keyboard = models.CharField(max_length = 100)
-    Mouse = models.CharField(max_length = 100)
-    Headset = models.CharField(max_length = 100)
+    GameName = models.CharField(max_length = 100)
+    RealName = models.CharField(max_length = 100)
+    Country = models.CharField(max_length = 100)
+    Earnings = models.IntegarField()
 
 class PlaysGame(models.model):
     GameName = models.ForeignKey(VideoGames)
@@ -27,10 +27,8 @@ class Tournaments(models.model):
     Winner = models.CharField(max_length = 100)
 
 class Match(models.model):
-    StartTime = models.DateTimeField('Start Time')
-    TeamName = models.CharField(max_length = 100)
+    Round = models.CharField(max_length = 100)
     Year = models.DateField()
-class
 
 class Team(models.model):
     TeamName = models.CharField(max_length = 100, primary_key = True)
@@ -38,6 +36,10 @@ class Team(models.model):
     WinningsPercent = models.FloatField()
     Wins = models.IntegarField()
     Losses = models.IntegarField()
+    Draws = models.IntegarField()
+    Region = models.CharField(max_length = 100)
+    TotalWinnings = models.IntegarField()
+    Sponsor = models.CharField(max_length = 100)
 
 class PlaysIn(models.model):
     TeamName = ForeignKey(Team, on_delete=models.CASCADE)
