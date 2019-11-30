@@ -26,23 +26,19 @@ class Tournaments(models.model):
     PrizeMoney = models.IntegarField()
     Winner = models.CharField(max_length = 100)
 
+class Match(models.model):
+    StartTime = models.DateTimeField('Start Time')
+    TeamName = models.CharField(max_length = 100)
+    Year = models.DateField()
+class
 
-Match(
-	MatchID: Int
-	StartTime: Time
-	T_name: String
-	Year: Data
-)
+class Team(models.model):
+    TeamName = models.CharField(max_length = 100, primary_key = True)
+    Country = models.CharField(max_length = 100)
+    WinningsPercent = models.FloatField()
+    Wins = models.IntegarField()
+    Losses = models.IntegarField()
 
-E-SportsTeam(
-	TeamName: String
-	Country: String
-	Winnings: Float
-	Wins: Int
-	Losses: Int
-)
-
-PlaysIn(
-	TeamName: String FORGIEN KEY
-	MatchID: Int FORIEGN KEY
-)
+class PlaysIn(models.model):
+    TeamName = ForeignKey(Team, on_delete=models.CASCADE)
+    MatchID = ForeignKey(Match, on_delete=models.CASCADE)
