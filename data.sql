@@ -3,7 +3,7 @@ VALUES ("Dota 2", "Valve", "T");
 
 
 INSERT INTO Qpage_tournaments(TournamentName, Year, Location, PrizeMoney, Winner)
-VALUES("The International", 2019-08-20 12:00:00, "Shaghai, China", 34330068, "OG");
+VALUES("The International", '2019-08-20 12:00:00', "Shaghai, China", 34330068, "OG");
 
 
 
@@ -348,70 +348,70 @@ VALUES ("Mineski", "pieliedie", "Johan Astrom" , "Sweden", 981304);
 
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R1(Bo1) ", 2019-08-20 13:00:00);
+VALUES("Lower Bracket R1(Bo1) ", '2019-08-20 13:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R1(Bo1)", 2019-08-20 14:00:00);
+VALUES("Lower Bracket R1(Bo1)", '2019-08-20 14:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R1(Bo1)", 2019-08-20 15:00:00);
+VALUES("Lower Bracket R1(Bo1)", '2019-08-20 15:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R1(B01)", 2019-08-20 16:00:00);
+VALUES("Lower Bracket R1(B01)", '2019-08-20 16:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket R1(Bo3)", 2019-08-20 17:00:00);
+VALUES("Upper Bracket R1(Bo3)", '2019-08-20 17:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket R1(Bo3)", 2019-08-20 18:00:00);
+VALUES("Upper Bracket R1(Bo3)", '2019-08-20 18:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket R1(Bo3)", 2019-08-20 19:00:00);
+VALUES("Upper Bracket R1(Bo3)", '2019-08-20 19:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket R1(Bo3)", 2019-08-20 20:00:00);
+VALUES("Upper Bracket R1(Bo3)", '2019-08-20 20:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R2(Bo3)", 2019-08-21 12:00:00);
+VALUES("Lower Bracket R2(Bo3)", '2019-08-21 12:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R2(Bo3)", 2019-08-21 13:00:00);
+VALUES("Lower Bracket R2(Bo3)", '2019-08-21 13:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R2(Bo3)", 2019-08-21 14:00:00);
+VALUES("Lower Bracket R2(Bo3)", '2019-08-21 14:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R2(Bo3)", 2019-08-21 15:00:00);
+VALUES("Lower Bracket R2(Bo3)", '2019-08-21 15:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket R2(Bo3)", 2019-08-21 16:00:00);
+VALUES("Upper Bracket R2(Bo3)", '2019-08-21 16:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket R2(Bo3)", 2019-08-21 17:00:00);
+VALUES("Upper Bracket R2(Bo3)", '2019-08-21 17:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R3(Bo3)", 2019-08-22 12:00:00);
+VALUES("Lower Bracket R3(Bo3)", '2019-08-22 12:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R3(Bo3)", 2019-08-22 13:00:00);
+VALUES("Lower Bracket R3(Bo3)", '2019-08-22 13:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R4(Bo3)", 2019-08-22 14:00:00);
+VALUES("Lower Bracket R4(Bo3)", '2019-08-22 14:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R4(Bo3)", 2019-08-22 15:00:00);
+VALUES("Lower Bracket R4(Bo3)", '2019-08-22 15:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket R5(Bo3)", 2019-08-22 16:00:00);
+VALUES("Lower Bracket R5(Bo3)", '2019-08-22 16:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Upper Bracket Final (Bo3)", 2019-08-23 12:00:00);
+VALUES("Upper Bracket Final (Bo3)", '2019-08-23 12:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Lower Bracket Final (Bo3)", 2019-08-23 13:00:00);
+VALUES("Lower Bracket Final (Bo3)", '2019-08-23 13:00:00');
 
 INSERT INTO Qpage_match(Round, Year)
-VALUES("Grand Final (Bo5)", 2019-08-24 12:00:00);
+VALUES("Grand Final (Bo5)", '2019-08-24 12:00:00');
 
 
 
