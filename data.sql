@@ -1,71 +1,71 @@
 -- INSERT INTO Qpage_videogames(GameName, Developer, Rating)
 -- VALUES("DOTA 2" , "VALVE", "T");
 
-INSERT INTO Qpage_tournaments(TournamentName, Year, Location, PrizeMoney, Winner)
-VALUES("The International", '2019-08-20 12:00:00', "Shaghai, China", 34330068, "OG");
+-- INSERT INTO Qpage_tournaments(TournamentName, Year, Location, PrizeMoney, Winner)
+-- VALUES("The International", '2019-08-20 12:00:00', "Shaghai, China", 34330068, "OG");
 
 
 
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
   VALUES ("Team Secret",388, 137, 47, "Europe", 10464297 , "CORSAIR");
 
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
   VALUES ("Virtus.pro",616, 398, 66, "CIS", 9264111 , "Mr.Cat");
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
     VALUES ("Vici Gaming",600, 329, 79, "China", 8352200, "HLA Jeans");
 
-    INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+    INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
       VALUES ("Evil Geniuses",618, 308, 47, "North America", 19640209, "Monster Energy");
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
   VALUES ("Team Liquid",434, 241, 51, "Europe", 22546134 , "Alienware");
 
 
-  INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+  INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
     VALUES ("PSG.LGD",622, 314, 79, "China", 15699723 , "PSG Esports");
 
-INSERT INTO Qpage_team(TeamName_id,  Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName,  Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
 VALUES ("Fnatic",596, 401, 50, "Southeast Asia", 3902145 , "OnePlus");
 
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
   VALUES ("Ninjas in Pyjamas",165, 142, 35, "North America", 909318 , "Betway");
 
 
-  INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+  INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
     VALUES ("TNC Predator",370, 197, 44, "Southeast Asia", 4362444 , "NVIDIA GeForce");
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
   VALUES ("OG",262, 126, 25, "Europe", 33405675 , "Red Bull");
 
 
-  INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+  INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
     VALUES ("Alliance", 534, 335, 73, "Europe", 4433604 , "GG.BET");
 
 
-  INSERT INTO Qpage_team(TeamName_id,  Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+  INSERT INTO Qpage_team(TeamName,  Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
     VALUES ("Newbee",332, 120, 34, "China", 13361226 , "RAYBET");
 
-    INSERT INTO Qpage_team(TeamName_id,  Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+    INSERT INTO Qpage_team(TeamName,  Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
       VALUES ("Infamous",122, 8 , 23, "South America", 1302910 , "Omen by HP");
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
 VALUES ("Chaos Esports",181, 12, 22, "China", 1221263 , "NVIDIA GeForce");
 
 
-INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
   VALUES ("Keen Gaming",217, 119, 27, "China", 1221263 , "NVIDIA GeForce");
 
-  INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+  INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
     VALUES ("Natus Vincere",650, 395, 53, "CIS", 4688990 , "GG.BET");
 
-    INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+    INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
       VALUES ("Royal Never Give Up",77, 6, 6, "China", 943237 , "Li-Ning");
 
-      INSERT INTO Qpage_team(TeamName_id, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
+      INSERT INTO Qpage_team(TeamName, Wins, Losses, Draws, Region, TotalWinnings, Sponsor)
         VALUES ("Mineski",446, 339, 42, "Southeast Asia", 2245045 , "Acer Predator");
 
 
