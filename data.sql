@@ -414,134 +414,134 @@
 
 
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("Allinace", 1);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id ,id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Royal Never Give ", 1);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Fnatic", 2);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 2);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Infamous", 3);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id ,id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Keen Gaming", 3);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Mineski", 4);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Natus Vincere", 4);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id ,id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("PSG.LGD", 5);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id ,id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Virtus.pro", 5);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id ,id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Vici Gaming", 6);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id ,id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id )
 VALUES ("TNC Predator", 6);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("OG", 7);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Newbee", 7);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("Team Secret", 8);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("Evil Geniuses", 8);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Virtus.pro", 9);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("Royal Never Give Up", 9);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("TNC Predator", 10);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 10);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("Newbee", 11);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Infamous", 11);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Secret", 12);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Mineski", 12);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("PSG.LGD", 13);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("Vici Gaming", 13);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("OG", 14);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Evil Geniuses", 14);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Royal Never Give Up", 15);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 15);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Infamous", 16);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Secret", 16);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Evil Geniuses", 17);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 17);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Vici Gaming", 18);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Secret", 18);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 19);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Secret", 19);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("PSG.LGD", 20);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("OG", 20);
 
-INSERT INTO Qpage_playsin(TeamName_id, MatchID_id, id)
+INSERT INTO Qpage_playsin(TeamName_id, MatchID_id)
 VALUES ("PSG.LGD", 21);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 21);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("OG", 22);
 
-INSERT INTO Qpage_playsin(TeamName_id,MatchID_id,  id)
+INSERT INTO Qpage_playsin(TeamName_id,MatchID_id)
 VALUES ("Team Liquid", 22);
