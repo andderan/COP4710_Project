@@ -1,0 +1,39 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>home</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    </head>
+    <body style ="padding: 20px; background-color: #070719">
+        <hr>
+        <h1 class ="title">DOTA FOR DAYS</h1>
+        <hr>
+    <div class = "Tabs">
+            <div class = "buttonscontainer">
+
+                <button onclick="showPanel(0,'#f44336')">Home</button>
+                <button onclick="showPanel(1,'#4caf50')">Teams</button>
+                <button onclick="showPanel(2,'#2196f3')">Matches</button>
+
+            </div>
+        <div class = "tabpanel">
+            <h3> Dota 2 is a multiplayer online battle arena (MOBA) video game developed and published by Valve. The game is a sequel to Defense of the Ancients (DotA), which was a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos and its expansion pack, The Frozen Throne. Dota 2 is played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. Each of the ten players independently controls a powerful character, known as a "hero", who all have unique abilities and differing styles of play. During a match, players collect experience points and items for their heroes to successfully defeat the opposing team's heroes in player versus player combat. A team wins by being the first to destroy the other team's "Ancient", a large structure located within their base.
+            </h3>
+
+            <h3>Development of Dota 2 began in 2009 when IceFrog, lead designer of Defense of the Ancients, was hired by Valve to create a modernized remake for them in the Source game engine. It was officially released for Microsoft Windows, OS X, and Linux-based personal computers via the digital distribution platform Steam in July 2013, following a Windows-only open beta phase that began two years prior. The game is fully free-to-play with no heroes or any other gameplay element needing to be bought or otherwise unlocked. To maintain it, Valve supports the game as a service, offering loot boxes and a battle pass subscription system called Dota Plus that offer non-gameplay altering virtual goods in return, such as hero cosmetics and audio replacement packs. The game has also been updated with various other features since release, such as a port to the Source 2 engine and support for virtual reality.
+            </h3>
+
+            <h3>Dota 2 has a large esports scene, with teams from around the world playing in various professional leagues and tournaments. Valve manages an event format known as the Dota Pro Circuit, which are a series of tournaments that award qualification points for earning direct invitations to The International, the game's premier annual tournament. Internationals feature a crowdfunded prize money system that has seen amounts in upwards of US$30 million, making Dota 2 the most lucrative game in esports. Media coverage of most tournaments is done by a selection of on-site staff who provide commentary and analysis for the ongoing matches, similar to traditional sporting events. In addition to playing matches to a live audience in arenas and stadiums, broadcasts of them are also streamed live over the internet, and sometimes simulcast on television networks, with peak viewership numbers in the millions.
+            </h3>
+
+            <h3>Despite some criticism going towards its steep learning curve and overall complexity, Dota 2 was praised for its rewarding gameplay, production quality, and faithfulness to its predecessor, with many considering it to be one of the greatest video games of all time. Since its release, it has been one of the most played games on Steam, with over a million concurrent players at its peak. The popularity of the game has led to official merchandise for it being produced, including apparel, accessories, and toys, as well as promotional tie-ins to other games and media. The game also allows for the community to create their own gamemodes, maps, and cosmetics, which are uploaded to the Steam Workshop. In the late 2010s, Valve released two spinoff games featuring the setting of Dota 2. The first, Artifact, is a digital collectible card game, while the second, Dota Underlords, is a chess-like game derived from Dota Auto Chess, a popular community-created mod from within the game. Dota 2 has also been used in machine learning experiments, with a team of bots known as the OpenAI Five showing the capability to defeat professional players.
+            </h3>
+        </div>
+        <div class = "tabpanel">Tab2</div>
+        <div class = "tabpanel">Tab3</div>
+    </div>
+    <script src="{%static 'script.js' %}"></script>
+    </body>
+</html>

@@ -2,45 +2,42 @@ from django.db import models
 
 ## Schemea Models, translated in python
 
-class VideoGames(models.model):
+class VideoGames(models.Model):
     GameName = models.CharField(max_length = 100, primary_key=True)
     Developer = models.CharField(max_length = 100)
     Rating = models.CharField(max_length = 1)
 
-class Players(models.model):
-    TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)
+class Team(models.Model):
+    TeamName = models.CharField(max_length = 100, primary_key = True)
+    Wins = models.IntegerField()
+    Losses = models.IntegerField()
+    Draws = models.IntegerField()
+    Region = models.CharField(max_length = 100)
+    TotalWinnings = models.IntegerField()
     Sponsor = models.CharField(max_length = 100)
+
+class Players(models.Model):
+    TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)
     GameName = models.CharField(max_length = 100)
     RealName = models.CharField(max_length = 100)
     Country = models.CharField(max_length = 100)
-    Earnings = models.IntegarField()
+    Earnings = models.IntegerField()
 
-class PlaysGame(models.model):
-    GameName = models.ForeignKey(VideoGames)
-    PlayerID = models.ForeignKey(Players)
+class PlaysGame(models.Model):
+    GameName = models.ForeignKey(VideoGames, on_delete=models.CASCADE)
+    PlayerID = models.ForeignKey(Players, on_delete=models.CASCADE)
 
-class Tournaments(models.model):
+class Tournaments(models.Model):
     TournamentName = models.CharField(max_length = 100, primary_key = True)
     Year = models.DateTimeField('Start Date')
     Location = models.CharField(max_length = 100)
-    PrizeMoney = models.IntegarField()
+    PrizeMoney = models.IntegerField()
     Winner = models.CharField(max_length = 100)
 
-class Match(models.model):
+class Match(models.Model):
     Round = models.CharField(max_length = 100)
     Year = models.DateField()
 
-class Team(models.model):
-    TeamName = models.CharField(max_length = 100, primary_key = True)
-    Country = models.CharField(max_length = 100)
-    WinningsPercent = models.FloatField()
-    Wins = models.IntegarField()
-    Losses = models.IntegarField()
-    Draws = models.IntegarField()
-    Region = models.CharField(max_length = 100)
-    TotalWinnings = models.IntegarField()
-    Sponsor = models.CharField(max_length = 100)
-
-class PlaysIn(models.model):
-    TeamName = ForeignKey(Team, on_delete=models.CASCADE)
-    MatchID = ForeignKey(Match, on_delete=models.CASCADE)
+class PlaysIn(models.Model):
+    TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)
+    MatchID = models.ForeignKey(Match, on_delete=models.CASCADE)
