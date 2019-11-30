@@ -1,7 +1,7 @@
-INSERT INTO Qpage_videogames(GameName, Developer, Rating)
-VALUES("DOTA 2" , "VALVE", "T");
+-- INSERT INTO Qpage_videogames(GameName, Developer, Rating)
+-- VALUES("DOTA 2" , "VALVE", "T");
 
-INSERT INTO Qpage_tournaments(TournamentName, Year, Location, PrizeMoney, Winner_ID)
+INSERT INTO Qpage_tournaments(TournamentName, Year, Location, PrizeMoney, Winner)
 VALUES("The International", '2019-08-20 12:00:00', "Shaghai, China", 34330068, "OG");
 
 
