@@ -1,5 +1,3 @@
-INSERT INTO Qpage_videogames(GameName, Developer, Rating)
-VALUES ("Dota 2", "Valve", "T");
 
 
 INSERT INTO Qpage_tournaments(TournamentName, Year, Location, PrizeMoney, Winner)
