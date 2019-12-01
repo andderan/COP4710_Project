@@ -16,12 +16,18 @@ class Team(models.Model):
     TotalWinnings = models.IntegerField()
     Sponsor = models.CharField(max_length = 100)
 
+    def __str__(self):
+        return self.TeamName + ',  ' + self.Region
+
 class Players(models.Model):
     TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)
     GameName = models.CharField(max_length = 100)
     RealName = models.CharField(max_length = 100)
     Country = models.CharField(max_length = 100)
     Earnings = models.IntegerField()
+
+    def __str__(self):
+        return self.GameName + ', (' + self.RealName + ')'
 
 class PlaysGame(models.Model):
     GameName = models.ForeignKey(VideoGames, on_delete=models.CASCADE)
@@ -38,6 +44,9 @@ class Match(models.Model):
     Round = models.CharField(max_length = 100)
     Year = models.DateField()
     Winner = models.ForeignKey(Team, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.Round + ' @' + str(self.Year)
 
 class PlaysIn(models.Model):
     TeamName = models.ForeignKey(Team, on_delete=models.CASCADE)

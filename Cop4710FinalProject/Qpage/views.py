@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .models import Team, Players, Match
+from .models import Team, Players, Match, PlaysIn
 
 ## Selects Players given a team name
 def SelectPlayerQuery(Team_Name):
@@ -39,4 +39,15 @@ def MatchDisplay(request, Match_Id):
     for MatchObject in Match_List:
         if MatchObject.id == Match_Id:
             Selected_Match = (MatchObject)
-    WinningPlayers = []
+    WinningPlayers = SelectPlayerQuery(Selected_Match.Winner)
+    WinningTeam = Selected_Match.Winner
+    PlaysIn_List = PlaysIn.objects.order_by('TeamName')
+    LosingPlayers = []
+    for teams in PlaysIn_List:
+        if teams.MatchID.id == Selected_Match.id and Selected_Match.Winner != teams.TeamName.TeamName:
+            LosingTeam = teams.TeamName
+            LosingPlayers = SelectPlayerQuery(teams.TeamName.TeamName)
+
+    context = {'WinningPlayers': WinningPlayers, 'LosingPlayers': LosingPlayers,
+              'WinningTeam': WinningTeam, 'LosingTeam': LosingTeam}
+    return render(request, 'HTML', context)
