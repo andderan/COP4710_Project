@@ -341,10 +341,10 @@ VALUES ("Mineski", "Febby", "Kim Yong-Min" , "South Korea", 602346);
 INSERT INTO Qpage_players(TeamName_id, GameName, RealName, Country, Earnings)
 VALUES ("Mineski", "pieliedie", "Johan Astrom" , "Sweden", 981304);
 
-
-
-
-
+--
+--
+--
+--
 
 INSERT INTO Qpage_match(Round, Year, Winner_ID)
 VALUES("Lower Bracket R1(Bo1) ", '2019-08-20 13:00:00', "Royal Never Give Up");
