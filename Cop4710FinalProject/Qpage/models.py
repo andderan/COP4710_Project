@@ -26,6 +26,8 @@ class Players(models.Model):
     Country = models.CharField(max_length = 100)
     Earnings = models.IntegerField()
 
+    class Meta:
+        verbose_name_plural = "Players"
     def __str__(self):
         return self.GameName + ', (' + self.RealName + ')'
 
@@ -45,6 +47,8 @@ class Match(models.Model):
     Year = models.DateField()
     Winner = models.ForeignKey(Team, on_delete=models.CASCADE)
 
+    class Meta:
+        verbose_name_plural = "Macthes"
     def __str__(self):
         return self.Round + ' @' + str(self.Year)
 

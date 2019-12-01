@@ -22,7 +22,11 @@ def Teams(request):
     context = {'Team_List': Team_List}
     return render(request, 'Qpage/team_list.html', context)
 
-def TeamDisplay(request, Team_Name):
+def TeamDisplay(request, Team_Int_Key):
+    Team_List = Team.objects.all()
+    for teams in Team_List:
+        if teams.TotalWinnings == Team_Int_Key:
+            Team_Name = teams.TeamName
     SelectedPlayers = SelectPlayerQuery(Team_Name)
     context = {'SelectedPlayers' : SelectedPlayers}
     return render(request, 'Qpage/team_list.html', context)
