@@ -1,0 +1,42 @@
+{%load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TeamData</title>
+        <link rel="stylesheet" href="{%static 'stylesheet.css'%}">
+    </head>
+    <body>
+        <div class="boxed">
+            {{WinningTeam.TeamName}} VS {{LossingTeam.TeamName}}
+            <br>
+            <div class="buttons">
+                <a href="/">
+                    <button>
+                        Home
+                    </button>
+                </a>
+                <a href="/Teams">
+                    <button>
+                        Teams
+                    </button>
+                </a>
+                <a href="/Matches">
+                    <button>
+                        Matches
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="transbox">
+            <center>
+                <br>
+                <h2 style = "color: black;">{{WinningTeam.TeamName}}({{WinningTeam.Wins}}-{{WinningTeam.Losses}})</h2>
+                <h4 style = "color: black;">Has a {{WinnersChance}}% chance Win!</h4>
+                <h2 style = "color: black;">{{LossingTeam.TeamName}} ({{LossingTeam.Wins}}-{{LossingTeam.Losses}})</h2>
+                <h4 style = "color: black;">Has a {{LossersChance}}% chance to Win!</h4>
+        </center>
+    </div>
+    </body>
+</html>
