@@ -10,6 +10,9 @@
         <div class="boxed">
             {{TeamN.TeamName}}
             <br>
+            <t1>Region: {{TeamN.Region}} Record: </t1>
+            <t1 style = "color:chartreuse;">{{TeamN.Wins}}</t1><t1>-</t1><t1 style = "color:crimson;">{{TeamN.Losses}}</t1><t1>-</t1><t1 style = "color:yellow">{{TeamN.Draws}}</t1><t1> Sponsor: {{TeamN.Sponsor}}</t1>
+            <br>
             <div class="buttons">
                 <a href="/">
                     <button>
@@ -28,9 +31,9 @@
                 </a>
             </div>
         </div>
+
         <center>
-            <t1>Region: {{TeamN.Region}} Record: {{TeamN.Wins}}-{{TeamN.Losses}}-{{TeamN.Draws}} Sponsor: {{TeamN.Sponsor}}</t1>
-            <br><t1>Players</t1>
+            <br>
                 <table>
                     <caption>{{SelectedPlayers.Team_Name}}</caption>
                         <tr>
@@ -50,5 +53,6 @@
                 {% endfor %}
                     </table>
         </center>
+
     </body>
 </html>

@@ -49,18 +49,18 @@ def MatchDisplay(request, Match_Id):
     for MatchObject in Match_List:
         if MatchObject.id == Match_Id:
             Selected_Match = (MatchObject)
-    WinningPlayers = SelectPlayerQuery(Selected_Match.Winner)
+    WinningPlayers = SelectPlayerQuery(Selected_Match.Winner.TeamName)
     WinningTeam = Selected_Match.Winner
     PlaysIn_List = PlaysIn.objects.order_by('TeamName')
     LosingPlayers = []
     for teams in PlaysIn_List:
-        if teams.MatchID.id == Selected_Match.id and Selected_Match.Winner != teams.TeamName.TeamName:
+        if teams.MatchID.id == Selected_Match.id and Selected_Match.Winner.TeamName != teams.TeamName.TeamName:
             LosingTeam = teams.TeamName
-            LosingPlayers = SelectPlayerQuery(teams.TeamName.TeamName)
+            LosingPlayers = SelectPlayerQuery(teams.TeamName.TeamName) 
 
     context = {'WinningPlayers': WinningPlayers, 'LosingPlayers': LosingPlayers,
               'WinningTeam': WinningTeam, 'LosingTeam': LosingTeam}
-    return render(request, 'Qpage/mathces.html', context)
+    return render(request, 'Qpage/matchdisplay.html', context)
 
 
     # Advanced Function

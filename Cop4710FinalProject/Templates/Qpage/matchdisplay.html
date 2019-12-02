@@ -1,0 +1,74 @@
+{%load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Match Details</title>
+        <link rel="stylesheet" href="{%static 'matchd.css'%}">
+    </head>
+    <body>
+        <div class="boxed">
+            Match Detail
+            <br>
+            <div class="buttons">
+                <a href="/">
+                    <button>
+                        Home
+                    </button>
+                </a>
+                <a href="/Teams">
+                    <button>
+                        Teams
+                    </button>
+                </a>
+                <a href="/Predictions">
+                    <button>
+                        Predictions
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+<center>
+<table style = "display: inline-block; border: 1px solid;">
+    <context></context>
+    <tr>
+        <th colspan="5"  height= "100" style = "text-decoration: none; background-color: #228B22;">{{WinningTeam.TeamName}}: Winner</th>
+    </tr>
+
+<tr>
+    {%for player in WinningPlayers %}
+        <div class = "players">
+            <td height = "100" width = "150" >{{player.GameName}}</td>
+        </div>
+    {% endfor %}
+</tr>
+</table>
+
+
+<table style = "display: inline-block; border: 1px solid; ">
+    <tr>
+        <th colspan="5" height = "100" style = "text-decoration: none; background-color: #FF2D00">{{LosingTeam.TeamName}}: Loser</th>
+    </tr>
+
+<tr>
+    {%for player in LosingPlayers %}
+        <div class = "players">
+            <td height = "100" width = "150">{{player.GameName}}</td>
+        </div>
+    {% endfor %}
+</tr>
+</table>
+
+
+</center>
+
+
+
+
+
+
+
+    </body>
+</html>

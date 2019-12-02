@@ -35,30 +35,25 @@
                     <caption>{{SelectedPlayers.Team_Name}}</caption>
                         <tr>
                             <th>Round</th>
-                            <th>Loser</th>
-                            <th>Year</th>
-                            <th>Winner</th>
+                            <th>Matches</th>
+                            <th>Date</th>
 
                         </tr>
         {%for MatchObject in Match_List%}
                  <div class = "matches">
                         <tr>
-                            <td>{{MatchObject.Round}}</td>
+                            <td style="width:150px">{{MatchObject.Round}}</td>
                             {%for teams in PlaysIn_List%}
-                                {%if teams.MatchID.id == MatchObject.id and MatchObject.Winner != teams.TeamName.TeamName%}
-                                    <td>{{teams.TeamName.TeamName}}</td>
+                                {%if teams.MatchID.id == MatchObject.id and MatchObject.Winner.TeamName != teams.TeamName.TeamName%}
+                                <td style="width:400px"><a style="text-decoration: none; font-size: 25px; color: #FFFFFF; hover.color:#ff0000;" href = {{MatchObject.id}}>{{teams.TeamName.TeamName}} VS. {{MatchObject.Winner.TeamName}}</a></td>
                                 {%endif%}
                             {% endfor%}
-                            <td>{{MatchObject.Year}}</td>
-                            <td>{{MatchObject.Winner}}</td>
+                            <td style="width:150px">{{MatchObject.Year}}</td>
                         </tr>
                 </div>
         {% endfor %}
                     </table>
-
-
         </center>
 
     </body>
 </html>
-

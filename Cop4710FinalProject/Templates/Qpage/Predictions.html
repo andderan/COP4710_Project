@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Matches</title>
-        <link rel="stylesheet" href="{%static 'playerstyle.css'%}">
+        <link rel="stylesheet" href="{%static 'stylesheet.css'%}">
     </head>
     <body>
         <div class="boxed">
@@ -21,17 +21,17 @@
                         Teams
                     </button>
                 </a>
-                <a href="/Predictions">
+                <a href="/Matches">
                     <button>
-                        Predictions
+                        Matches
                     </button>
                 </a>
             </div>
         </div>
  <br>
-
-<h2>select your first team</h2>
-
+<div class="transbox">
+    <h2 style = "color: black; text-decoration: underline;">Select your first team</h2>
+<br>
         <div class="teams">
             {%for team in Team_List%}
                 <div class = "team">
@@ -40,7 +40,7 @@
                 </div>
             {% endfor %}
         </div>
-
+</div>
         <script>
             function check(){
                 var t1 = document.getElementById("Teams1");

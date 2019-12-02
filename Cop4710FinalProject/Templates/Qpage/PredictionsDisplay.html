@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>TeamData</title>
-        <link rel="stylesheet" href="{%static 'playerstyle.css'%}">
+        <link rel="stylesheet" href="{%static 'stylesheet.css'%}">
     </head>
     <body>
         <div class="boxed">
@@ -21,24 +21,22 @@
                         Teams
                     </button>
                 </a>
-                <a href="/Predictions">
-                    <button>
-                        Predictions
-                    </button>
-                </a>
-                <a href='/Matches'>
+                <a href="/Matches">
                     <button>
                         Matches
                     </button>
                 </a>
             </div>
         </div>
-        <center>
-            <h1>{{WinningTeam.TeamName}} ({{WinningTeam.Wins}}-{{WinningTeam.Losses}})</h1>
-            <h4>Has a {{WinnersChance}}% chance Win!</h4>
-            <h1>{{LossingTeam.TeamName}} ({{LossingTeam.Wins}}-{{LossingTeam.Losses}})</h1>
-            <h4>Has a {{LossersChance}}% chance to Win!</h4>
-   
+
+        <div class="transbox">
+            <center>
+                <br>
+                <h2 style = "color: black;">{{WinningTeam.TeamName}}({{WinningTeam.Wins}}-{{WinningTeam.Losses}})</h2>
+                <h4 style = "color: black;">Has a {{WinnersChance}}% chance Win!</h4>
+                <h2 style = "color: black;">{{LossingTeam.TeamName}} ({{LossingTeam.Wins}}-{{LossingTeam.Losses}})</h2>
+                <h4 style = "color: black;">Has a {{LossersChance}}% chance to Win!</h4>
         </center>
+    </div>
     </body>
 </html>
