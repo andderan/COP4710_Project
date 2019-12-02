@@ -1,0 +1,54 @@
+{%load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TeamData</title>
+        <link rel="stylesheet" href="{%static 'playerstyle.css'%}">
+    </head>
+    <body>
+        <div class="boxed">
+            {{TeamN.TeamName}}
+            <br>
+            <div class="buttons">
+                <a href="/">
+                    <button>
+                        Home
+                    </button>
+                </a>
+                <a href="/Teams">
+                    <button>
+                        Teams
+                    </button>
+                </a>
+                <a href="/Predictions">
+                    <button>
+                        Predictions
+                    </button>
+                </a>
+            </div>
+        </div>
+        <center>
+            <t1>Region: {{TeamN.Region}} Record: {{TeamN.Wins}}-{{TeamN.Losses}}-{{TeamN.Draws}} Sponsor: {{TeamN.Sponsor}}</t1>
+            <br><t1>Players</t1>
+                <table>
+                    <caption>{{SelectedPlayers.Team_Name}}</caption>
+                        <tr>
+                            <th>Gamer ID</th>
+                            <th>Real Name</th>
+                            <th>Earnings</th>
+
+                        </tr>
+        {%for player in SelectedPlayers%}
+                 <div class = "player">
+                        <tr>
+                            <td>{{player.GameName}}</td>
+                            <td>{{player.RealName}}</td>
+                            <td>${{player.Earnings}}</td>
+                        </tr>
+                </div>
+                {% endfor %}
+                    </table>
+        </center>
+    </body>
+</html>
